@@ -1,0 +1,10 @@
+{
+  "watch": ["."],
+  "ext": "js,json,ts",
+  "exec": "sh -c '[ -f index.ts ] && tsx index.ts || tsx index.js'",
+  "watchOptions": {
+    "usePolling": true,
+    "interval": 5000,
+    "binaryInterval": 5000
+  }
+}
