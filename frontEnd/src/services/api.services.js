@@ -1,4 +1,5 @@
-const API_BASE = 'https://6adae69567c3f8100dbaa456-api-capstone.myanatomy.ai'
+const API_BASE = 'http://localhost:8080';
+
 ;
 
 async function request(path, options = {}) {
