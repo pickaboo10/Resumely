@@ -32,17 +32,25 @@ export default function Dashboard({ user, setUser, activeTab, setActiveTab, resu
             >
               <span>◒</span> Latest results
             </button>
+            <button
+              type="button"
+              className="nav-logout-button"
+              onClick={signOut}
+              title="Log out"
+            >
+              Log out
+            </button>
           </nav>
         </div>
 
         <div className="sidebar-bottom">
           <div className="mini-avatar">{user.name ? user.name[0].toUpperCase() : 'U'}</div>
-          <div>
+          <div className="user-details">
             <strong>{user.name}</strong>
             <small>{user.email}</small>
           </div>
-          <button className="logout" onClick={signOut} title="Sign out" type="button">
-            ↗
+          <button className="logout" onClick={signOut} title="Sign out" type="button" aria-label="Sign out">
+            ⎋
           </button>
         </div>
       </aside>
